@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online JavaScript Compiler</title>
+    <!-- Icon-Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icon-Link -->
+    <!-- Tailwind Css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Css -->
+  </head>
+  <body>
+    <!-- Banner -->
+    <div
+      class="w-full h-32 bg-sky-50 flex justify-between items-center border-b-2"
+    >
+      <div class="text mx-14">
+        <b class="text-4xl italic text-cyan-600">Free</b>
+        <span class="text-slate-600 italic block"
+          >JavaScript Online Compiler</span
+        >
+      </div>
+      <div class="btn mx-14 lg:flex md:flex hidden">
+        <button
+          class="py-2 px-5 italic bg-cyan-500 text-white font-semibold rounded shadow-md hover:bg-cyan-700"
+        >
+          Programming >
+        </button>
+      </div>
+    </div>
+    <!-- Banner -->
+    <!-- main-Content  -->
+    <div
+      class="main.js grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 w-full h-[608px] bg-stone-200"
+    >
+      <!-- child-1 -->
+      <div
+        class="main-child-1 lg:border-r-2 border-slate-500 md:border-x-2 border-slate-500 border-b-2 border-slate-500"
+      >
+        <div
+          class="sibling w-full h-[64px] bg-white flex justify-between items-center"
+        >
+          <div
+            class="sib-1 flex justify-center items-center w-[100px] h-[64px] border-r-2 border-b-2 border-gray-500"
+          >
+            <span class="italic text-xl text-cyan-700">Main.Js</span>
+          </div>
+          <div class="sib-2 mx-8">
+            <button
+              class="py-2 px-5 lg:mx-2 md:mx-2 mx-2 bg-cyan-500 text-white font-semibold rounded shadow-md hover:bg-cyan-700"
+            >
+              <i class="fa-regular fa-moon text-xl"></i>
+            </button>
+            <button
+              onclick="runCode()"
+              class="py-2 px-5 bg-sky-500 text-white italic font-semibold rounded shadow-md hover:bg-blue-700"
+            >
+              Run
+            </button>
+          </div>
+        </div>
+        <!-- js-Worked-input -->
+        <!-- line-1 -->
+        <div class="js-worked-input grid grid-cols-[5%_90%] gap-2">
+          <div
+            class="straight-line-1 h-[542px] border-r-2 border-black bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-black-500 to-90%"
+          ></div>
+          <!-- line-1 -->
+
+          <!-- Js-input -->
+          <div class="input h-[542px]">
+            <textarea
+              id="codeEditor"
+              class="w-full h-full border-none bg-stone-200 text-sky-950 p-4 resize-none rounded-md outline-none font-mono italic"
+              placeholder="Write your JavaScript code here..."
+            ></textarea>
+          </div>
+          <!-- Js-input -->
+        </div>
+        <!-- js-Worked-input -->
+      </div>
+      <!-- child-1 -->
+
+      <!-- child-2 -->
+      <div class="main-child-2">
+        <!-- Child-decendants  -->
+        <div
+          class="decendent w-full h-[64px] bg-white flex justify-between items-center"
+        >
+          <div
+            class="dec-1 flex justify-center items-center w-[100px] h-[64px] border-r-2 border-t-2 border-gray-500"
+          >
+            <span class="italic text-xl text-cyan-700">Output</span>
+          </div>
+          <div class="dec-2">
+            <button
+              onclick="clearOutput()"
+              class="py-2 px-5 mx-8 italic bg-green-500 text-white font-semibold rounded shadow-md hover:bg-green-400"
+            >
+              Clear
+            </button>
+          </div>
+        </div>
+        <!--Child-decendants  -->
+        <!-- js-worked-output -->
+        <div class="js-worked-output grid grid-cols-[5%_90%] gap-2">
+          <!--Line-2  -->
+          <div
+            class="straight-line-2 w-[40px] border-r-2 border-black h-[542px] bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-black-500 to-90%"
+          ></div>
+          <!-- Line-2 -->
+
+          <!-- Js-output -->
+          <div
+            class="output h-[542px] w-full italic font-mono text-lime-800 p-4 rounded-md overflow-y-auto"
+            id="output"
+          ></div>
+          <!-- Js-output -->
+        </div>
+      </div>
+      <!-- js-worked-output -->
+
+      <!-- child-2 -->
+    </div>
+    <!-- main-Content  -->
+
+    <!-- JavaScript  -->
+    <script src="app.Online-Comiler.js"></script>
+    <!-- JavaScript  -->
+  </body>
+</html>
